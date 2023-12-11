@@ -1,0 +1,43 @@
+<!--homepage.html-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and Registration System</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body> 
+    <center>
+    <br><br><br>
+    <!-- Registration Form -->
+    <h1>Register</h1>
+    <h2>
+    <form action="hpregister.php" method="post">
+        <!--creates a label for the username-->
+        <label for="userRegistration">Username:</label>
+        <!--Creates a text field where the user can -->
+        <input type="text" name="userRegistration" required><br>
+    
+        <label for="passRegistration">Password:</label>
+        <input type="password" name="passRegistration" required><br>
+    
+        <input type="submit" value="Register">
+    </form>
+    </h2>
+
+    <!-- Login Form -->
+    <h1>Login</h1>
+    <h2>
+    <form action="hplogin.php" method="post">
+        <label for="userLogin">Username:</label>
+        <input type="text" name="userLogin" required><br>
+    
+        <label for="passLogin">Password:</label>
+        <input type="password" name="passLogin" required><br>
+    
+        <input type="submit" value="Login">
+    </form>
+</h2>
+</body></center>
+    </h2>
+</body>
+</html>

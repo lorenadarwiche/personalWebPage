@@ -1,0 +1,18 @@
+-- Creating a database for my shopping cart and input it into the phpadmin
+CREATE DATABASE IF NOT EXISTS shopping_cart;
+
+USE shopping_cart;
+
+-- Create a table for products
+CREATE TABLE IF NOT EXISTS products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    availability INT NOT NULL
+);
+
+-- Insert some sample products
+INSERT INTO products (name, price, availability) VALUES
+('Apple Charger', 19.99, 10),
+('iPhone Case', 29.99, 5),
+('Battery Pack', 39.99, 8);
